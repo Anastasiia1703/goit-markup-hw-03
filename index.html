@@ -11,34 +11,40 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="page-header">
       <!-- Навигация -->
-      <div class="container">
-        <nav>
+      <div class="container-header container">
+        <nav class="container-nav">
           <a href="#" class="logo"><span class="logo-web">Web</span>Studio</a>
-          <ul class="list">
-            <li>
+          <ul class="header-list list">
+            <li class="header-item">
               <a class="header-link current" href="#">Студія</a>
             </li>
-            <li>
+            <li class="header-item">
               <a class="header-link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li>
+            <li class="header-item">
               <a class="header-link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="list">
-          <li>
+        <ul class="contact-list list">
+          <li class="contact-item">
             <a class="contact-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contact-item">
             <a class="contact-link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
@@ -49,39 +55,37 @@
     <main>
       <!-- Герой -->
       <section class="section-hero">
-          <div class="container">
-            <p>
-              <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-              <button class="hero-button" type="button">Замовити послугу</button>
-            </p>
-          </div>
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero-button" type="button">Замовити послугу</button>
+        </div>
       </section>
       <!-- "Особливості" -->
-      <section class="peculiarities">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
-          <ul class="list">
-            <li>
+          <ul class="container-peculiarities list">
+            <li class="peculiarities-item">
               <h3 class="peculiarities-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="peculiarities-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li class="peculiarities-item">
               <h3 class="peculiarities-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="peculiarities-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="peculiarities-item">
               <h3 class="peculiarities-title">ПЛАНУВАННЯ</h3>
               <p class="peculiarities-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="peculiarities-item">
               <h3 class="peculiarities-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="peculiarities-text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -92,37 +96,38 @@
         </div>
       </section>
       <!-- Чим ми займаємося -->
-      <section class="occupation">
+      <section class="section-occupation">
         <div class="container">
           <h2 class="title-section">Чим ми займаємося</h2>
-          <ul class="list">
-            <li>
+          <ul class="container-occupation list">
+            <li class="occupation-item">
               <img
                 src="./images/men_typing_a_code.jpg"
                 alt="men_typing_a_code"
                 width="370"
               />
             </li>
-            <li>
+            <li class="occupation-item">
               <img
                 src="./images/phone_and_laptop.jpg"
                 alt="phone_and_laptop"
                 width="370"
               />
             </li>
-            <li>
+            <li class="occupation-item">
               <img src="./images/tablet.jpg" alt="tablet" width="370" />
             </li>
           </ul>
         </div>
       </section>
       <!-- Наша команда -->
-      <section class="team-section">
+      <section class="section team-section">
         <div class="container">
           <h2 class="title-section">Наша команда</h2>
-          <ul class="team-list list">
+          <ul class="container-team list">
             <li class="team-item">
-              <img class="team-image"
+              <img
+                class="team-image"
                 src="./images/ihor_demyanenko.jpg"
                 alt="ihor_demyanenko"
                 width="270"
@@ -131,7 +136,8 @@
               <p class="team-text">Product Designer</p>
             </li>
             <li class="team-item">
-              <img class="team-image"
+              <img
+                class="team-image"
                 src="./images/olga_repina.jpg"
                 alt="olga_repina"
                 width="270"
@@ -140,7 +146,8 @@
               <p class="team-text">Frontend Developer</p>
             </li>
             <li class="team-item">
-              <img class="team-image"
+              <img
+                class="team-image"
                 src="./images/mykola_tarasov.jpg"
                 alt="mykola_tarasov"
                 width="270"
@@ -149,7 +156,8 @@
               <p class="team-text">Marketing</p>
             </li>
             <li class="team-item">
-              <img class="team-image"
+              <img
+                class="team-image"
                 src="./images/mykhailo_ermakov.jpg"
                 alt="mykhailo_ermakov"
                 width="270"
