@@ -53,8 +53,6 @@ img {
 /* HEADER */
 
 .header-page {
-  margin: auto auto;
-  max-width: 1600px;
   border-bottom: var(--border-header);
 }
 
@@ -120,8 +118,6 @@ img {
 }
 
 .container-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -132,6 +128,8 @@ img {
 }
 
 .contact-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -148,7 +146,7 @@ img {
 /* ГЕРОЙ */
 
 .section-hero {
-  margin: auto auto;
+  margin: 0 auto;
   max-width: 1600px;
   padding: 200px 0;
   text-align: center;
@@ -171,7 +169,7 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--color-hero-button);
+  background-color: var(--color-hero-button);
 }
 
 .hero-button {
@@ -261,8 +259,6 @@ img {
 /* Наша команда */
 
 .team-section {
-  margin: auto auto;
-  max-width: 1600px;
   background: var(--background-section-team);
 }
 
@@ -308,8 +304,6 @@ img {
 /* футер */
 
 .footer-section {
-  margin: auto auto;
-  max-width: 1600px;
   padding: 60px 0;
   background: var(--background-color-hero);
 }
@@ -326,9 +320,12 @@ img {
   text-decoration: none;
 }
 
+.footer-item {
+  margin-bottom: 10px;
+}
+
 .footer-address {
   display: inline-block;
-  margin-bottom: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -341,10 +338,6 @@ img {
 .footer-address:hover,
 .footer-address:focus {
   color: var(--accent-color);
-}
-
-.footer-link-mail {
-  margin-bottom: 10px;
 }
 
 .footer-link {
@@ -365,14 +358,14 @@ img {
 /* п о р т ф о л и о */
 
 .portfolio-section {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 55px;
+  margin-bottom: 42px;
 }
 
 .filter-item + .filter-item {
