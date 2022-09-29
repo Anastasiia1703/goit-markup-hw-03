@@ -130,12 +130,16 @@ img {
 .contact-link {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
   text-decoration: none;
+
+  color: var(--primary-text-color);
 }
 
 .contact-link:hover,
@@ -143,14 +147,34 @@ img {
   color: var(--accent-color);
 }
 
+.contact-link:hover .icon-contact,
+.contact-link:focus .icon-contact {
+  fill: var(--accent-color);
+}
+
+.icon-contact {
+  margin-right: 10px;
+}
+
 /* ГЕРОЙ */
 
 .section-hero {
   margin: 0 auto;
-  max-width: 1600px;
   padding: 200px 0;
+  max-width: 1600px;
+  height: 600px;
+
   text-align: center;
-  background: var(--background-color-hero);
+
+  background-color: var(--background-color-hero);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -189,7 +213,7 @@ img {
 /* СЕКЦИИ */
 
 .section {
-  padding: 95px 0;
+  padding: 94px 0;
 }
 
 /* ОСОБЛИВОСТІ */
@@ -215,6 +239,34 @@ img {
 
 .peculiarities-item:last-child {
   margin-right: 0;
+}
+
+.peculiarities-item::before {
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: block;
+}
+
+/* иконки */
+
+.icon-antena::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .peculiarities-title {
@@ -259,10 +311,10 @@ img {
 /* Наша команда */
 
 .team-section {
-  background: var(--background-section-team);
+  background-color: var(--background-section-team);
 }
 
-.container-team {
+.team-list {
   display: flex;
 }
 
@@ -271,6 +323,9 @@ img {
   margin-right: 30px;
   text-align: center;
   background-color: var(--secondary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item:last-child {
@@ -294,11 +349,79 @@ img {
 
 .team-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.icon-team-list {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-team-item {
+  height: 44px;
+}
+
+.icon-team-link {
+  margin: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-team-link:hover,
+.icon-team-link:focus {
+  background-color: var(--accent-color);
+}
+
+.icon-team-link:hover .icon-team,
+.icon-team-link:focus .icon-team {
+  fill: white;
+}
+
+.icon-team {
+  fill: #afb1b8;
+}
+
+/* Постійні клієнти */
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-item {
+  height: 92px;
+}
+
+.icon-clients-link {
+  height: 92px;
+  display: block;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.icon-clients-link:hover,
+.icon-clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.icon-clients {
+  fill: #afb1b8;
+}
+
+.icon-clients-link:hover .icon-clients,
+.icon-clients-link:focus .icon-clients {
+  fill: var(--accent-color);
 }
 
 /* футер */
@@ -306,6 +429,10 @@ img {
 .footer-section {
   padding: 60px 0;
   background: var(--background-color-hero);
+}
+
+.box-footer {
+  display: flex;
 }
 
 .logo-footer {
@@ -355,6 +482,50 @@ img {
   color: var(--accent-color);
 }
 
+.box-footer-right {
+  margin-left: 70px;
+}
+
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-list {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-footer-item {
+  height: 44px;
+}
+
+.icon-footer-link {
+  margin: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-footer-link:hover,
+.icon-footer-link:focus {
+  background-color: var(--accent-color);
+}
+
+.icon-footer {
+  fill: var(--secondary-white-color);
+}
+
 /* п о р т ф о л и о */
 
 .portfolio-section {
@@ -365,7 +536,7 @@ img {
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 42px;
+  margin-bottom: 50px;
 }
 
 .filter-item + .filter-item {
@@ -386,6 +557,10 @@ img {
   min-width: 73px;
   border-radius: 4px;
   padding: 6px 22px;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -419,6 +594,9 @@ img {
 
 .portfolio-item {
   width: calc((100% - 60px) / 3);
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-title {
